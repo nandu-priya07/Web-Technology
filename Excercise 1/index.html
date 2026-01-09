@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LearnHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🎓 LearnHub</h1>
+    <p>Upgrade your skills, one course at a time</p>
+    <input type="text" id="searchInput" placeholder="Search courses..." onkeyup="searchCourses()">
+</header>
+
+<!-- COURSES -->
+<section class="courses" id="courseList">
+
+    <!-- COURSE CARD TEMPLATE -->
+    <div class="course-card"><span class="badge">Beginner</span>
+        <h3>HTML Basics</h3><p>Web structure fundamentals</p>
+        <div class="rating">⭐⭐⭐⭐☆</div>
+        <button class="enroll-btn" onclick="enroll('HTML Basics')">Enroll</button>
+    </div>
+
+    <div class="course-card"><span class="badge">Beginner</span>
+        <h3>CSS Fundamentals</h3><p>Styling & layouts</p>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <button class="enroll-btn" onclick="enroll('CSS Fundamentals')">Enroll</button>
+    </div>
+
+    <div class="course-card"><span class="badge intermediate">Intermediate</span>
+        <h3>JavaScript</h3><p>Logic & interactivity</p>
+        <div class="rating">⭐⭐⭐⭐☆</div>
+        <button class="enroll-btn" onclick="enroll('JavaScript')">Enroll</button>
+    </div>
+
+    <div class="course-card"><span class="badge advanced">Advanced</span>
+        <h3>React JS</h3><p>Frontend framework</p>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <button class="enroll-btn" onclick="enroll('React JS')">Enroll</button>
+    </div>
+
+    <div class="course-card"><span class="badge">Beginner</span>
+        <h3>Python</h3><p>Programming basics</p>
+        <div class="rating">⭐⭐⭐⭐☆</div>
+        <button class="enroll-btn" onclick="enroll('Python')">Enroll</button>
+    </div>
+
+    <div class="course-card"><span class="badge intermediate">Intermediate</span>
+        <h3>Data Structures</h3><p>Problem solving</p>
+        <div class="rating">⭐⭐⭐⭐☆</div>
+        <button class="enroll-btn" onclick="enroll('DSA')">Enroll</button>
+    </div>
+
+    <div class="course-card"><span class="badge advanced">Advanced</span>
+        <h3>Machine Learning</h3><p>AI fundamentals</p>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <button class="enroll-btn" onclick="enroll('ML')">Enroll</button>
+    </div>
+
+    <div class="course-card"><span class="badge">Beginner</span>
+        <h3>SQL</h3><p>Database basics</p>
+        <div class="rating">⭐⭐⭐⭐☆</div>
+        <button class="enroll-btn" onclick="enroll('SQL')">Enroll</button>
+    </div>
+
+</section>
+
+<!-- TEACHERS -->
+<section class="teachers">
+    <h2>👨‍🏫 Our Teachers</h2>
+    <div class="teacher-grid">
+        <div class="teacher">John Doe<br><span>Web Dev (5 yrs)</span></div>
+        <div class="teacher">Jane Smith<br><span>Frontend (6 yrs)</span></div>
+        <div class="teacher">Alex Brown<br><span>Python & AI (7 yrs)</span></div>
+    </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews">
+    <h2>⭐ Student Reviews</h2>
+    <div class="review">“Very clear explanations!” – Rahul ⭐⭐⭐⭐⭐</div>
+    <div class="review">“Helped me crack interviews.” – Sneha ⭐⭐⭐⭐☆</div>
+    <div class="review">“Simple and practical.” – Arjun ⭐⭐⭐⭐⭐</div>
+</section>
+
+<!-- CHATBOT -->
+<div class="chatbot-btn" onclick="toggleChat()">🤖</div>
+
+<div class="chatbot" id="chatbot">
+    <div class="chat-header">Help Bot</div>
+    <div class="chat-body" id="chatBody">
+        <p>Hi! Ask about courses, teachers, or enrollment.</p>
+    </div>
+    <input type="text" placeholder="Type here..." onkeydown="chat(event)">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

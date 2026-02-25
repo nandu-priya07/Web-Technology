@@ -1,0 +1,126 @@
+File 1: index.html (Main Frame Page)
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Learning Portal</title>
+</head>
+
+<frameset rows="15%,85%">
+    <frame src="header.html">
+    <frameset cols="25%,75%">
+        <frame src="nav.html">
+        <frame src="home.html" name="content">
+    </frameset>
+</frameset>
+</html>
+File 2: header.html
+<!DOCTYPE html>
+<html>
+<body style="background:lightblue;text-align:center;">
+<h1>ONLINE LEARNING PORTAL</h1>
+</body>
+</html>
+File 3: nav.html
+<!DOCTYPE html>
+<html>
+<body style="background:#e6f2ff;">
+<h3>Navigation</h3>
+
+<a href="login.html" target="content">Login</a><br><br>
+<a href="catalogue.html" target="content">Course Catalogue</a><br><br>
+<a href="register.html" target="content">Register</a>
+
+</body>
+</html>
+File 4: home.html
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Welcome to Online Learning Portal</h2>
+<p>Select an option from the navigation menu.</p>
+</body>
+</html>
+File 5: login.html
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Login</h2>
+
+<form>
+Username:<br>
+<input type="text" required><br><br>
+
+Password:<br>
+<input type="password" required><br><br>
+
+<input type="submit" value="Login">
+</form>
+
+</body>
+</html>
+File 6: catalogue.html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Available Courses</h2>
+
+<table border="1" cellpadding="8">
+<tr>
+    <th>Course ID</th>
+    <th>Course Name</th>
+    <th>Instructor</th>
+    <th>Fee</th>
+</tr>
+<tr>
+    <td>C101</td>
+    <td>Web Development</td>
+    <td>Mr. Kumar</td>
+    <td>₹3000</td>
+</tr>
+<tr>
+    <td>C102</td>
+    <td>Python Programming</td>
+    <td>Ms. Meena</td>
+    <td>₹3500</td>
+</tr>
+<tr>
+    <td>C103</td>
+    <td>Data Science</td>
+    <td>Dr. Ravi</td>
+    <td>₹5000</td>
+</tr>
+</table>
+
+</body>
+</html>
+File 7: register.html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Student Registration</h2>
+
+<form>
+Name:<br>
+<input type="text" required><br><br>
+
+Email:<br>
+<input type="email" required><br><br>
+
+Password:<br>
+<input type="password" required><br><br>
+
+Gender:<br>
+<input type="radio" name="g" required> Male
+<input type="radio" name="g"> Female<br><br>
+
+Address:<br>
+<textarea rows="4" cols="30"></textarea><br><br>
+
+<input type="submit">
+<input type="reset">
+</form>
+
+</body>
+</html>

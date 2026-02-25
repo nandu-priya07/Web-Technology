@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Records - Online Learning Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 20px;
+        }
+        h1 {
+            color: darkblue;
+        }
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            background-color: white;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Student Information</h1>
+
+<h2>General Details</h2>
+<ul>
+    <li>Name: Priya</li>
+    <li>Department: Computer Science</li>
+    <li>Year: 2nd Year</li>
+    <li>Section: A</li>
+</ul>
+
+<h2>Course Progress</h2>
+<ol>
+    <li>Semester 1 Completed</li>
+    <li>Semester 2 Completed</li>
+    <li>Registered for Semester 3</li>
+</ol>
+
+<h2>Student Records</h2>
+<table>
+<tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Course</th>
+    <th>Marks</th>
+</tr>
+<tr>
+    <td>101</td>
+    <td>Priya</td>
+    <td>Web Development</td>
+    <td>85</td>
+</tr>
+<tr>
+    <td>102</td>
+    <td>Rahul</td>
+    <td>Python Programming</td>
+    <td>90</td>
+</tr>
+<tr>
+    <td>103</td>
+    <td>Anitha</td>
+    <td>Database Systems</td>
+    <td>88</td>
+</tr>
+</table>
+
+</body>
+</html>

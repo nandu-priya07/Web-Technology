@@ -1,0 +1,112 @@
+A) INLINE CSS
+
+File: inline.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Learning Portal - Inline CSS</title>
+</head>
+
+<body>
+
+<h1 style="color: teal; text-align: center;">
+    ONLINE LEARNING PORTAL
+</h1>
+
+<p style="font-size:18px; color: darkgreen;">
+Welcome to the online learning portal. This content is styled using Inline CSS.
+</p>
+
+<button style="background: orange; padding: 10px; border: none; color:white;">
+Explore Courses
+</button>
+
+</body>
+</html>
+
+B) INTERNAL CSS
+File: internal.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Learning Portal - Internal CSS</title>
+
+<style>
+body {
+    font-family: Arial;
+    background-color: #eef6ff;
+}
+
+h1 {
+    text-align: center;
+    color: navy;
+}
+
+p {
+    font-size: 18px;
+    margin: 20px;
+    color: #333;
+}
+
+button {
+    background-color: teal;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Online Learning Portal</h1>
+<p>This webpage uses Internal CSS for styling course information.</p>
+<button>View Dashboard</button>
+
+</body>
+</html>
+
+ C) EXTERNAL CSS
+File 1: external.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Learning Portal - External CSS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Online Learning Portal</h1>
+<p>This page is styled using an External CSS file.</p>
+<button>Login</button>
+
+</body>
+</html>
+File 2: style.css
+body {
+    font-family: Verdana;
+    background-color: #e3f2fd;
+}
+
+h1 {
+    text-align: center;
+    color: purple;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 18px;
+    margin: 20px;
+    color: #444;
+}
+
+button {
+    background-color: #ff4081;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+}

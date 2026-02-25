@@ -1,0 +1,34 @@
+PROGRAMME 4
+
+Student Information Form
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Form</title>
+</head>
+<body>
+<h2>Student Information Form</h2>
+<form action="submit.html" method="POST">
+Name:<br>
+<input type="text" name="student_name" placeholder="Enter your name" required><br><br>
+
+Email:<br>
+<input type="email" name="email" placeholder="Enter your email" required><br><br>
+Branch:<br>
+<select name="branch" required>
+<option>CSE</option>
+<option>ECE</option>
+<option>EEE</option>
+<option>MECH</option>
+</select><br><br>
+Gender:<br>
+<input type="radio" name="gender" value="male" required> Male
+<input type="radio" name="gender" value="female"> Female<br><br>
+Address:<br>
+<textarea name="address" rows="4" cols="30" required></textarea><br><br>
+<input type="submit">
+<input type="reset">
+</form>
+</body>
+</html>

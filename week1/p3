@@ -1,0 +1,24 @@
+PROGRAMME 3
+Anchor + Iframe + Image
+
+
+File 1: 
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Course Preview</h2>
+<a href="course_image.html" target="frame1">View Course Image</a>
+<br><br>
+<iframe name="frame1" width="500" height="300"></iframe>
+</body>
+</html>
+
+
+File 2:
+<!DOCTYPE html>
+<html>
+<body>
+<img src="course.jpg" width="400" height="250" alt="Course Image">
+</body>
+</html>

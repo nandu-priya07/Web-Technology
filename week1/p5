@@ -1,0 +1,47 @@
+PROGRAMME 5
+
+Map with Hotspots + Frames
+File 1: map_index.html
+<!DOCTYPE html>
+<html>
+<frameset cols="30%,70%">
+    <frame src="links.html">
+    <frame src="map.html" name="content">
+</frameset>
+</html>
+File 2: links.html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Campus Areas</h3>
+
+<a href="content.html" target="content">View Details</a>
+
+</body>
+</html>
+File 3: map.html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Campus Map</h2>
+
+<img src="campus.jpg" usemap="#campusmap" width="400">
+
+<map name="campusmap">
+<area shape="rect" coords="50,50,150,150" href="content.html" target="content">
+</map>
+
+</body>
+</html>
+File 4: content.html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Learning Block</h2>
+<p>This area contains classrooms and labs.</p>
+
+</body>
+</html>
